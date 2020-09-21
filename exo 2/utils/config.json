@@ -1,0 +1,8 @@
+{
+    "db": {
+        "url": "mongodb://127.0.0.1",
+        "dbname": "/nanblog",
+        "port": ":27017"
+
+    }
+}
