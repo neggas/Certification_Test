@@ -29,7 +29,7 @@ app.use(
 
 const userAuthRoute = require("./router/userAuth");
 const articleRoute = require("./router/articlesRoute");
-const adminRoute = require("./router/adminAuth");
+
 
 app.use((req, res, next) => {
     res.locals.isAuthenticated = req.session.isLoggedIn;
