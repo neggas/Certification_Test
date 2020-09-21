@@ -6,4 +6,25 @@
 
 const Test = (chaine) => {
     // Ecrivez votre code ici
+
+    let letter = chaine[2];
+
+    return isUnique(letter, chaine) && isConsomme(letter, chaine);
 };
+
+const isUnique = (letter, chaine) => {
+
+    let oc = 0;
+    chaine.split('').forEach(el => {
+        if (el === letter) oc += 1;
+    });
+
+    return oc === 1;
+
+}
+
+const isConsomme = (letter) => {
+    return "BCDFGHJKLMNPQRSTVWXZ".toLowerCase().includes(letter.toLowerCase());
+}
+
+console.log(Test("arsaresne"));

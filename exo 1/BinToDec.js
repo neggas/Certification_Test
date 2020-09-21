@@ -5,6 +5,9 @@
  */
 
 
-const BinToDec = (Number) => {
+const BinToDec = (number) => {
     // Ecrivez votre code ici
+    return parseInt(number, 2)
 };
+
+console.log(BinToDec("11110"));

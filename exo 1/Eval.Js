@@ -7,6 +7,11 @@
  */
 
 
+
 const Eval = (chaine) => {
+
     // Ecrivez votre code ici
+    console.log(eval(chaine));
 };
+
+Eval("4+6-8*9");

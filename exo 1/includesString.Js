@@ -4,6 +4,18 @@
 // exemple: includesString('salut','bonjour') => ['u'], includesString('maman','moniqua') => ['m','a','n']
 
 
-const includesString = (chaineA,cchaineB) => {
+const includesString = (chaineA, chaineB) => {
     // écrivez votre code ici
+    let rez = [];
+    chaineA.split('').forEach(el => {
+        if ((chaineB).includes(el)) {
+
+            if (rez.indexOf(el) < 0)
+                rez.push(el);
+        }
+    });
+
+    console.log(rez)
 };
+
+includesString('maman', 'moniqua');

@@ -6,6 +6,9 @@
  */
 
 
-const Ocurrence = (numb1,numb2) => {
+const Ocurrence = (numb1, numb2) => {
     // Ecrivez votre code ici4
+    return numb2.replace(numb1, '*');
 };
+
+console.log(Ocurrence("salut", "salutation"));

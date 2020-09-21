@@ -6,6 +6,21 @@
  */
 
 
-const Union = (tabA,tabB) => {
+const Union = (tabA, tabB) => {
     // Ecrivez votre code ici
+
+    tabA = tabA.sort();
+    let min = tabA[0];
+    let max = tabA[tabA.length - 1];
+    let rezUnion = [];
+    let rezIntersection = [];
+
+    tabB.forEach(el => {
+        if (el >= min || el < max) rezUnion.push(el)
+        else rezIntersection.push(el);
+    });
+
+    console.log(rezUnion);
 };
+
+Union([4, 8, 9, -5], [5, 6, 9, 2, 3]);

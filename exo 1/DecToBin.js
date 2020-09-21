@@ -4,6 +4,9 @@
  */
 
 
-const DecToBin = (Number) => {
+const DecToBin = (number) => {
     // Ecrivez votre code ici
+    return Number(number).toString(2);
 };
+
+console.log(DecToBin(30));

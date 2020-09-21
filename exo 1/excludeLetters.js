@@ -6,5 +6,14 @@
 
 
 const excludeLetters = (chaine) => {
-    // Ecrivez votre code ici
+    let rez = '';
+    for (let i = 0; i < chaine.length; i++) {
+        if (i % 2 !== 0) {
+            rez += chaine[i];
+        }
+    }
+
+    return rez;
 };
+
+console.log(excludeLetters("je suis arsene"));
